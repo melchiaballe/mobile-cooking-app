@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/homepage">
+    </item>
+
+    <item
+        android:id="@+id/recipe"
+        android:title="Recipe"
+        android:icon="@drawable/recipes">
+
+    </item>
+
+    <item
+        android:id="@+id/timer"
+        android:title="Timer"
+        android:icon="@drawable/timer">
+    </item>
+
+    <item
+        android:id="@+id/feedback"
+        android:title="feedback"
+        android:icon="@drawable/feedback">
+    </item>
+</menu>

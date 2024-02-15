@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Let's Cook Some Eggs"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="20dp">
+
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="126dp"
+                        tools:layout_editor_absoluteX="141dp"
+                        tools:layout_editor_absoluteY="94dp"
+                        android:src="@mipmap/test_foreground" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Omelette"
+                        android:textAlignment="center"
+                        android:textSize="18sp"></TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:onClick="launchTimerDetailScreen"
+                        android:text="Cook Now"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="126dp"
+                        tools:layout_editor_absoluteX="141dp"
+                        tools:layout_editor_absoluteY="94dp"
+                        android:src="@mipmap/test_foreground" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Sunny Side Up"
+                        android:textAlignment="center"
+                        android:textSize="18sp"></TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:onClick="launchTimerDetailScreen"
+                        android:text="Cook Now"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="126dp"
+                        tools:layout_editor_absoluteX="141dp"
+                        tools:layout_editor_absoluteY="94dp"
+                        android:src="@mipmap/test_foreground" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Poached"
+                        android:textAlignment="center"
+                        android:textSize="18sp"></TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:onClick="launchTimerDetailScreen"
+                        android:text="Cook Now"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="126dp"
+                        tools:layout_editor_absoluteX="141dp"
+                        tools:layout_editor_absoluteY="94dp"
+                        android:src="@mipmap/test_foreground" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Egg Spread"
+                        android:textAlignment="center"
+                        android:textSize="18sp"></TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:onClick="launchTimerDetailScreen"
+                        android:text="Cook Now"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
