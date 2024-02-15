@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
 
     public void launchTimerDetailScreen(View v) {
@@ -82,10 +84,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void launchRecipeDetailScreen(View v) {
-        Intent intent = new Intent(this, RecipeDetailsActivity.class);
-        startActivity(intent);
-    }
+//    public void launchRecipeDetailScreen(View v) {
+//        Intent intent = new Intent(this, RecipeDetailsActivity.class);
+//        startActivity(intent);
+//    }
 
     public void launchFeedbackDetails(View v) {
         Intent intent = new Intent(this, FeedbackRatingActivity.class);
