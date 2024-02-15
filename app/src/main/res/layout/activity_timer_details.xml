@@ -95,9 +95,11 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/timer_start"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="startTimerClick"
                     android:text="Start">
                 </Button>
 
@@ -107,10 +109,12 @@
                 </Space>
 
                 <Button
+                    android:id="@+id/timer_pause"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pause">
+                    android:text="Pause"
+                    android:onClick="pauseTimerClick">
                 </Button>
 
                 <Space
@@ -119,10 +123,12 @@
                 </Space>
 
                 <Button
+                    android:id="@+id/timer_reset"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset">
+                    android:text="Reset"
+                    android:onClick="resetTimerClick">
                 </Button>
 
             </LinearLayout>
