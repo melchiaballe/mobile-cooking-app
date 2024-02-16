@@ -26,6 +26,9 @@ public class TimerDetailsActivity extends AppCompatActivity {
 
     private CountDownTimer timer;
 
+    Boolean is_paused = false;
+    Long millisecond_in_pause;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,9 +85,11 @@ public class TimerDetailsActivity extends AppCompatActivity {
         timerDuration.setEnabled(false);
         timerProgressBar.setVisibility(View.VISIBLE);
 
-        timer = new CountDownTimer(((timerDuration.getProgress() * 60) * 1000), 1000) {
+        long timer_dur = is_paused ? millisecond_in_pause : ((timerDuration.getProgress() * 60) * 1000);
+        timer = new CountDownTimer(timer_dur, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
+                millisecond_in_pause = millisUntilFinished;
                 int sec = (int) (millisUntilFinished / 1000);
 
                 seekbarTextView.setText((sec / 60) + ":" + (sec % 60));
@@ -112,9 +117,12 @@ public class TimerDetailsActivity extends AppCompatActivity {
         timerProgressBar.setVisibility(View.INVISIBLE);
 
         timer.cancel();
+        is_paused = true;
     }
 
     public void resetTimerClick(View v) {
+        is_paused = false;
+
         startButton.setEnabled(true);
         pauseButton.setEnabled(false);
         resetButton.setEnabled(false);
@@ -132,6 +140,7 @@ public class TimerDetailsActivity extends AppCompatActivity {
         Button nextStageBtn = (Button) findViewById(R.id.next_stage);
 
         timer.cancel();
+        is_paused = false;
 
         if (!nextStageBtn.getText().toString().toLowerCase().equals("done")) {
             TextView tViewCurrStage = findViewById(R.id.current_stage);
