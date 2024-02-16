@@ -16,7 +16,7 @@
             android:layout_width="269dp"
             android:layout_height="162dp"
             android:layout_marginTop="36dp"
-            android:src="@mipmap/test_foreground"
+            android:src="@mipmap/main_header_round"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -55,7 +55,7 @@
                     android:layout_height="126dp"
                     tools:layout_editor_absoluteX="141dp"
                     tools:layout_editor_absoluteY="94dp"
-                    android:src="@mipmap/test_foreground" />
+                    android:src="@mipmap/omelette_image_foreground" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                     android:textSize="18sp"></TextView>
 
                 <Button
-                    android:id="@+id/omeletteBtn"
+                    android:id="@+id/omelette_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="See Recipe"
@@ -88,7 +88,7 @@
                     android:layout_height="126dp"
                     tools:layout_editor_absoluteX="141dp"
                     tools:layout_editor_absoluteY="94dp"
-                    android:src="@mipmap/test_foreground" />
+                    android:src="@mipmap/sunny_side_image_foreground" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -99,6 +99,7 @@
                     android:textSize="18sp"></TextView>
 
                 <Button
+                    android:id="@+id/sunny_side_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="See Recipe"

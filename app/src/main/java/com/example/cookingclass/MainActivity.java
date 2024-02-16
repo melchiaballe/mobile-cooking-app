@@ -79,20 +79,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void launchTimerDetailScreen(View v) {
-        Intent intent = new Intent(this, TimerDetailsActivity.class);
-        startActivity(intent);
-    }
+//    public void launchTimerDetailScreen(View v) {
+//        Intent intent = new Intent(this, TimerDetailsActivity.class);
+//        startActivity(intent);
+//    }
 
 //    public void launchRecipeDetailScreen(View v) {
 //        Intent intent = new Intent(this, RecipeDetailsActivity.class);
 //        startActivity(intent);
 //    }
 
-    public void launchFeedbackDetails(View v) {
-        Intent intent = new Intent(this, FeedbackRatingActivity.class);
-        startActivity(intent);
-    }
+//    public void launchFeedbackDetails(View v) {
+//        Intent intent = new Intent(this, FeedbackRatingActivity.class);
+//        startActivity(intent);
+//    }
 
 
 }

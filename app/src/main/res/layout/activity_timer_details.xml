@@ -32,6 +32,7 @@
                 android:layout_marginTop="100dp">
 
                 <TextView
+                    android:id="@+id/recipe_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sunny Side Up"
@@ -40,24 +41,40 @@
                 </TextView>
 
                 <TextView
-                    android:layout_marginLeft="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Time:"
-                    android:textSize="25sp">
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:gravity="end">
                 </TextView>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content">
 
+                </Space>
                 <TextView
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/duration_generic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20 mins"
+                    android:text="20"
                     android:textSize="25sp">
                 </TextView>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content">
+
+                </Space>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Mins"></TextView>
 
             </LinearLayout>
 
             <TextView
+                android:id="@+id/current_stage"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,6 +98,8 @@
 
                 <SeekBar
                     android:id="@+id/seekbar_timer"
+                    android:max="20"
+                    android:min="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 </SeekBar>
@@ -144,6 +163,7 @@
                     android:layout_height="wrap_content">
 
                     <ProgressBar
+                        android:id="@+id/timer_progress_bar"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -165,6 +185,8 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/next_stage"
+                android:onClick="nextStage"
                 android:layout_marginLeft="230dp"
                 android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"

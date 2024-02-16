@@ -56,6 +56,27 @@
 
             </TextView>
 
+            <TextView
+                android:id="@+id/preparation_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="30"
+                android:gravity="end"
+                android:layout_weight="1">
+
+            </TextView>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content">
+
+            </Space>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Mins"></TextView>
+
         </LinearLayout>
 
         <LinearLayout
@@ -66,6 +87,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/preparation_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="This is where I put preparation description"
@@ -92,6 +114,26 @@
 
             </TextView>
 
+            <TextView
+                android:id="@+id/cooking_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="30"
+                android:gravity="end"
+                android:layout_weight="1">
+            </TextView>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content">
+
+            </Space>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Mins"></TextView>
+
         </LinearLayout>
 
         <LinearLayout
@@ -102,6 +144,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/cooking_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="This is where I put cooking description"
@@ -128,6 +171,26 @@
 
             </TextView>
 
+            <TextView
+                android:id="@+id/resting_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="30"
+                android:gravity="end"
+                android:layout_weight="1">
+            </TextView>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content">
+
+            </Space>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Mins"></TextView>
+
         </LinearLayout>
 
         <LinearLayout
@@ -138,6 +201,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/resting_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="This is where I put Resting description"

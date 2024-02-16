@@ -54,7 +54,7 @@
                         android:layout_height="126dp"
                         tools:layout_editor_absoluteX="141dp"
                         tools:layout_editor_absoluteY="94dp"
-                        android:src="@mipmap/test_foreground" />
+                        android:src="@mipmap/omelette_image_foreground" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -65,6 +65,7 @@
                         android:textSize="18sp"></TextView>
 
                     <Button
+                        android:id="@+id/omelette_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -85,7 +86,7 @@
                         android:layout_height="126dp"
                         tools:layout_editor_absoluteX="141dp"
                         tools:layout_editor_absoluteY="94dp"
-                        android:src="@mipmap/test_foreground" />
+                        android:src="@mipmap/sunny_side_image_foreground" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -96,6 +97,7 @@
                         android:textSize="18sp"></TextView>
 
                     <Button
+                        android:id="@+id/sunny_side_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -130,7 +132,7 @@
                         android:layout_height="126dp"
                         tools:layout_editor_absoluteX="141dp"
                         tools:layout_editor_absoluteY="94dp"
-                        android:src="@mipmap/test_foreground" />
+                        android:src="@mipmap/poached_image_foreground" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -141,6 +143,7 @@
                         android:textSize="18sp"></TextView>
 
                     <Button
+                        android:id="@+id/poached_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -161,7 +164,7 @@
                         android:layout_height="126dp"
                         tools:layout_editor_absoluteX="141dp"
                         tools:layout_editor_absoluteY="94dp"
-                        android:src="@mipmap/test_foreground" />
+                        android:src="@mipmap/egg_salad_image" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -172,6 +175,7 @@
                         android:textSize="18sp"></TextView>
 
                     <Button
+                        android:id="@+id/spread_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"

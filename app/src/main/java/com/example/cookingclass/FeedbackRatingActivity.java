@@ -22,6 +22,13 @@ public class FeedbackRatingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback_rating);
 
+        Intent intent = getIntent();
+
+        String title = getIntent().getStringExtra("title");
+        TextView tviewTitle = (TextView) findViewById(R.id.rating_title);
+
+        tviewTitle.setText(title);
+
         isAgreeTermsSwitch = (SwitchCompat) findViewById(R.id.agree_disagree_switch);
         isAgreeTermsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
