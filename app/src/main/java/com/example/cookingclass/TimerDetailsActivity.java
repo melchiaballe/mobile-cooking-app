@@ -26,7 +26,8 @@ public class TimerDetailsActivity extends AppCompatActivity {
 
     private CountDownTimer timer;
 
-    Boolean is_paused = false;
+    Boolean is_paused;
+    Boolean timer_has_started;
     Long millisecond_in_pause;
 
 
@@ -36,6 +37,9 @@ public class TimerDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_timer_details);
 
         Intent intent = getIntent();
+
+        is_paused = false;
+        timer_has_started = false;
 
         genericDurationTextView = (TextView) findViewById(R.id.duration_generic);
         genericDurationTextView.setText(intent.getStringExtra("prep_duration"));
@@ -85,6 +89,8 @@ public class TimerDetailsActivity extends AppCompatActivity {
         timerDuration.setEnabled(false);
         timerProgressBar.setVisibility(View.VISIBLE);
 
+        timer_has_started = true;
+
         long timer_dur = is_paused ? millisecond_in_pause : ((timerDuration.getProgress() * 60) * 1000);
         timer = new CountDownTimer(timer_dur, 1000) {
             @Override
@@ -105,6 +111,7 @@ public class TimerDetailsActivity extends AppCompatActivity {
                 resetButton.setEnabled(false);
 
                 timerDuration.setEnabled(true);
+                is_paused = false;
 
             }
         }.start();
@@ -131,6 +138,7 @@ public class TimerDetailsActivity extends AppCompatActivity {
         timerProgressBar.setVisibility(View.INVISIBLE);
 
         timer.cancel();
+        timer_has_started = false;
 
         timerDuration.setProgress(Integer.valueOf(genericDurationTextView.getText().toString()));
         seekbarTextView.setText(String.valueOf(timerDuration.getProgress()) + ":00");
@@ -139,8 +147,12 @@ public class TimerDetailsActivity extends AppCompatActivity {
     public void nextStage(View v) {
         Button nextStageBtn = (Button) findViewById(R.id.next_stage);
 
-        timer.cancel();
+        if(timer_has_started) {
+            timer.cancel();
+        }
+
         is_paused = false;
+        timer_has_started = false;
 
         if (!nextStageBtn.getText().toString().toLowerCase().equals("done")) {
             TextView tViewCurrStage = findViewById(R.id.current_stage);
